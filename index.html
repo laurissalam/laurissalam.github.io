@@ -65,7 +65,7 @@
             background: #FFF;
             margin-bottom: 2rem;
             padding-top: 120px;
-        }
+        } 
 
         .intro img {
             border-radius: 50%;
@@ -82,8 +82,8 @@
             background: #FFF;
             margin-bottom: 2rem;
             padding: 2rem;
-            padding-top: 120px; 
-            margin-top: -120px; 
+            padding-top: 110px; 
+            margin-top: -110px; 
         }
 
         footer {
@@ -95,7 +95,7 @@
         }
 
         /* Chatbot styles */
-        #chatbot {
+         #chatbot {
             position: fixed;
             bottom: 20px;
             right: 20px;
@@ -126,11 +126,12 @@
             border-radius: 5px;
             font-family: 'Quicksand', sans-serif;
             cursor: pointer;
+            margin: 4px;
         }
 
         #chatbot button:hover {
             background: #6b705c;
-        }
+        } 
 
         .social-icons {
             text-align: center; /* Center the icons */
@@ -161,6 +162,7 @@
 <body>
     <header id="home">
         <nav>
+            <a href="#home-section">Home</a>
             <a href="#about-section">About Me</a>
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
@@ -169,6 +171,7 @@
     </header>
 
     <div class="container intro" id="about">
+        <section id="home-section">
         <img src="headshot.jpeg" alt="Laurissa Lam" />
         <h1>Laurissa Lam</h1>
         <h2>I'm <span class="typing"></span></h2>
@@ -184,7 +187,7 @@
                 <img src="gmail.png" alt="Email" />
             </a>
         </div>
-        
+        </section>
 
     </div>
 
@@ -287,7 +290,7 @@
     <!-- Chatbot HTML -->
     <div id="chatbot">
         <div class="chatbot-message">
-            <p>Hi there! What would you like to know?</p>
+            <p>Hi there! What would you like to know about me?</p>
             <button onclick="askQuestion('live')">Where are you currently based in?</button>
             <button onclick="askQuestion('food')">What do you like to eat?</button>
             <button onclick="askQuestion('hobbies')">Any hobbies or favorite genres?</button>
